@@ -35,7 +35,7 @@ void Ex1(int rows){
 			{
 				line = line * (i - j + 1) / j;
 			}
-			printf("%2d", line);
+			printf("%d ", line);
 		}
 		printf("\n");
 	}
