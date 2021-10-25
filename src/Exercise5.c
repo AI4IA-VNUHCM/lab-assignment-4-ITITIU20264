@@ -54,6 +54,7 @@ void Ex5(int arr[], int m, int n){
 			k = l;
 			l = 10e6; 
 		}
+		
 	}
 	printf("%d", k);
 }
