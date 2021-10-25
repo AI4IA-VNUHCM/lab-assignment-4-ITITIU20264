@@ -37,7 +37,26 @@ void Ex5(int arr[], int m, int n){
 	int a[SIZE][SIZE];
 	Array2Dconverter(arr,a,m,n);
 	//Your codes here
-
+	int i, j;
+	int k = 0;
+	int l = 10e6;
+	for(i = 0; i < m; ++i)
+	{
+		for(j = 0; j < n; ++j)
+		{
+			if(a[i][j] < l)
+			{
+				l = a[i][j];
+			}
+		}
+		if(k < l)
+		{
+			k = l;
+			l = 10e6; 
+		}
+		
+	}
+	printf("%d", k);
 }
 
 int main(int argc, char *argv[]) {
